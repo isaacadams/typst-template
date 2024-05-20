@@ -31,3 +31,8 @@ Homer wrote #h.
   #author wrote #title.
 ]
 ```
+
+## Documentation
+
+- typst docs: https://typst.app/docs/
+- typst github: https://github.com/typst/typst
