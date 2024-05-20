@@ -1,0 +1,5 @@
+{
+  "[typst]": {
+    "editor.formatOnSave": true
+  }
+}

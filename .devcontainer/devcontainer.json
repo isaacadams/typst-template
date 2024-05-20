@@ -1,0 +1,36 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+  "name": "Typst",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "dockerFile": "Dockerfile",
+  "build": {
+    "args": {
+      "VARIANT": "${localEnv:VARIANT:jammy}"
+    }
+  },
+
+  // https://code.visualstudio.com/remote/advancedcontainers/environment-variables#_option-2-use-an-env-file
+  "runArgs": ["--env-file", ".devcontainer/devcontainer.env"],
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  //"initializeCommand": "bash ./.devcontainer/init.sh",
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "bash ./.devcontainer/post-install.sh",
+  "postStartCommand": "bash ./.devcontainer/post-start.sh ${containerWorkspaceFolder}",
+
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": ["tomoki1207.pdf", "nvarner.typst-lsp", "rust-lang.rust-analyzer", "mgt19937.typst-preview", "myriad-dreamin.tinymist"]
+    }
+  }
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}
