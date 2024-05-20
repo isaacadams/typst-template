@@ -1,5 +1,9 @@
 # Welcome to your Typst Environment
 
+This is a template repo for when you are working with typst.
+
+## Getting Started
+
 Create a `main.typst` file.
 
 ```typst
