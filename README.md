@@ -4,7 +4,9 @@ This is a template repo for when you are working with typst.
 
 ## Getting Started
 
-Create a `main.typst` file.
+1. open a terminal, run `typst` and see the options
+
+2. Create a `main.typst` file.
 
 ```typst
 #emph[Hello] \
@@ -34,6 +36,12 @@ Homer wrote #h.
 #for (author, title) in other [
   #author wrote #title.
 ]
+```
+
+3. run 
+
+```bash
+typst compile main.typst
 ```
 
 ## Documentation
