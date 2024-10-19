@@ -6,6 +6,7 @@ _GNUPGHOME=$2
 
 git config --global --add safe.directory $_WORKSPACE_DIR
 
+# loading gpg configuration to ensure gpg can properly sign commits if git is configured for that
 rsync -av \
     --exclude '*.lock' \
     --exclude '*.lock.*' \
