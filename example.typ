@@ -1,14 +1,3 @@
-# Welcome to your Typst Environment
-
-This is a template repo for when you are working with typst.
-
-## Getting Started
-
-1. open a terminal, run `typst` and see the options
-
-2. See example in `example.typ`
-
-```typ
 #emph[Hello] \
 #emoji.face \
 #"hello".len()
@@ -36,15 +25,3 @@ Homer wrote #h.
 #for (author, title) in other [
   #author wrote #title.
 ]
-```
-
-3. run the following to compile
-
-```bash
-typst compile example.typ
-```
-
-## Documentation
-
-- typst docs: https://typst.app/docs/
-- typst github: https://github.com/typst/typst

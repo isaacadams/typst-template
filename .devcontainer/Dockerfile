@@ -7,7 +7,7 @@ RUN apt install curl xz-utils git build-essential gcc make nodejs -y
 
 # https://github.com/typst/typst/releases/
 # Download the binary
-RUN curl -L -o typst.tar.xz https://github.com/typst/typst/releases/download/v0.11.1/typst-x86_64-unknown-linux-musl.tar.xz
+RUN curl -L -o typst.tar.xz https://github.com/typst/typst/releases/download/v0.12.0/typst-x86_64-unknown-linux-musl.tar.xz
 # extract
 RUN tar -xvf ./typst.tar.xz
 RUN cp ./typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
