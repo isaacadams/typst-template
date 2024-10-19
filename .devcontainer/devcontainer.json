@@ -19,7 +19,7 @@
   //"initializeCommand": "bash ./.devcontainer/init.sh",
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "bash ./.devcontainer/post-install.sh",
-  "postStartCommand": "bash ./.devcontainer/post-start.sh ${containerWorkspaceFolder}",
+  "postStartCommand": "bash ./.devcontainer/post-start.sh ${containerWorkspaceFolder} $(echo \"${localEnv:GNUPGHOME}\" | tr '\\' '/')",
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
@@ -32,7 +32,10 @@
       ]
     }
   },
-  "mounts": ["source=${localEnv:GNUPGHOME},target=/root/.gnupg,type=tmpfs"]
+  "mounts": [
+    "type=tmpfs,target=/root/.gnupg",
+    "source=${localEnv:GNUPGHOME},target=/tmp/.gnupg,type=bind,readonly"
+  ]
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
 }
