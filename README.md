@@ -11,7 +11,7 @@ gh repo create my-typst-app --public --template isaacadams/typst-template
 ```
 
 - `my-typst-app` &nbsp; replace with whatever name you want for your repo
-- `--public` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `--private` or `--internal` are also valid choices
+- `--public` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `--private` or `--internal` are also valid choices
 
 2. open a terminal, run `typst` and see the options
 
