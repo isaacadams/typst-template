@@ -4,7 +4,7 @@ FROM ubuntu:$VARIANT
 
 # Update and install necessary packages
 RUN apt update && apt upgrade -y && \
-    apt install -y curl xz-utils git build-essential gcc make nodejs
+    apt install -y curl xz-utils git build-essential gcc make nodejs rsync
 
 # Install Rust
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
