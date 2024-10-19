@@ -4,7 +4,7 @@ This is a template repo for when you are working with typst.
 
 ## Getting Started
 
-1. create a new repo based on this template
+### 1. create a new repo based on this template
 
 ```bash
 gh repo create my-typst-app --public --template isaacadams/typst-template
@@ -13,9 +13,29 @@ gh repo create my-typst-app --public --template isaacadams/typst-template
 - `my-typst-app` &nbsp; replace with whatever name you want for your repo
 - `--public` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `--private` or `--internal` are also valid choices
 
-2. open a terminal, run `typst` and see the options
+### 2. open the project using devcontainers (this can optionally be done via vscode's UI)
 
-3. See example in `example.typ`
+#### install devcontainers cli tool
+
+```bash
+npm install -g @devcontainers/cli
+```
+
+#### macos startup command:
+
+```bash
+VARIANT=1-3.12-bookworm devcontainer up --workspace-folder .
+```
+
+#### windows startup command:
+
+```bash
+devcontainer up --workspace-folder .
+```
+
+### 3. open a terminal, run `typst` and see the options
+
+### 4. See example in `example.typ`
 
 ```typ
 #emph[Hello] \
@@ -47,7 +67,7 @@ Homer wrote #h.
 ]
 ```
 
-4. run the following to compile
+### 5. run the following to compile
 
 ```bash
 typst compile example.typ

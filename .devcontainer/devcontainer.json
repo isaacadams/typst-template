@@ -6,14 +6,12 @@
   "dockerFile": "Dockerfile",
   "build": {
     "args": {
+      "TYPST_VERSION": "0.12.0",
       "VARIANT": "${localEnv:VARIANT:jammy}"
     }
   },
   // https://code.visualstudio.com/remote/advancedcontainers/environment-variables#_option-2-use-an-env-file
-  "runArgs": [
-    "--env-file",
-    ".devcontainer/devcontainer.env"
-  ],
+  "runArgs": ["--env-file", ".devcontainer/devcontainer.env"],
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
