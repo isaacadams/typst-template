@@ -7,11 +7,11 @@ This is a template repo for when you are working with typst.
 1. create a new repo based on this template
 
 ```bash
-# my-typst-app  : replace with whatever name you want for your repo
-# --public      : --private or --internal are also valid choices
-
 gh repo create my-typst-app --public --template isaacadams/typst-template
 ```
+
+- `my-typst-app` &nbsp; replace with whatever name you want for your repo
+- `--public` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `--private` or `--internal` are also valid choices
 
 2. open a terminal, run `typst` and see the options
 
