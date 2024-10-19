@@ -4,9 +4,18 @@ This is a template repo for when you are working with typst.
 
 ## Getting Started
 
-1. open a terminal, run `typst` and see the options
+1. create a new repo based on this template
 
-2. See example in `example.typ`
+```bash
+# my-typst-app  : replace with whatever name you want for your repo
+# --public      : --private or --internal are also valid choices
+
+gh repo create my-typst-app --public --template isaacadams/typst-template
+```
+
+2. open a terminal, run `typst` and see the options
+
+3. See example in `example.typ`
 
 ```typ
 #emph[Hello] \
@@ -38,7 +47,7 @@ Homer wrote #h.
 ]
 ```
 
-3. run the following to compile
+4. run the following to compile
 
 ```bash
 typst compile example.typ
