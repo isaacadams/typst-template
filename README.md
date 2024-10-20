@@ -21,13 +21,7 @@ gh repo create my-typst-app --public --template isaacadams/typst-template
 npm install -g @devcontainers/cli
 ```
 
-#### macos startup command:
-
-```bash
-VARIANT=1-3.12-bookworm devcontainer up --workspace-folder .
-```
-
-#### windows startup command:
+#### startup command:
 
 ```bash
 devcontainer up --workspace-folder .

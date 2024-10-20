@@ -9,6 +9,13 @@ RUN apt update && apt upgrade -y && \
 # Install Rust
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
+# Install Nerd Font 
+# https://github.com/ryanoasis/nerd-fonts
+RUN mkdir -p 777 /usr/share/fonts/nerdfont && \
+    curl -L -o /usr/share/fonts/nerdfont/nerdfont.tar.xz https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
+
+RUN tar -xvf /usr/share/fonts/nerdfont/nerdfont.tar.xz -C /usr/share/fonts/nerdfont
+
 # Download Typst binary from the specified version
 # https://github.com/typst/typst/releases/
 ARG TYPST_VERSION
