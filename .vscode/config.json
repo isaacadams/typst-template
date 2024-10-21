@@ -1,9 +1,0 @@
-{
-  "[typst]": {
-    "editor.formatOnSave": true
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
-    "editor.formatOnSave": true
-  }
-}

@@ -1,0 +1,14 @@
+{
+  "tinymist.formatterMode": "disable",
+  "tinymist.exportPdf": "never",
+  "typst-lsp.experimentalFormatterMode": "on",
+  "typst-lsp.exportPdf": "never",
+  "[typst]": {
+    "editor.defaultFormatter": "nvarner.typst-lsp",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  }
+}
