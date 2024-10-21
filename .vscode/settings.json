@@ -1,10 +1,8 @@
 {
-  "tinymist.formatterMode": "disable",
+  "tinymist.formatterMode": "typstfmt",
   "tinymist.exportPdf": "never",
-  "typst-lsp.experimentalFormatterMode": "on",
-  "typst-lsp.exportPdf": "never",
   "[typst]": {
-    "editor.defaultFormatter": "nvarner.typst-lsp",
+    "editor.defaultFormatter": "myriad-dreamin.tinymist",
     "editor.formatOnSave": true
   },
   "[json]": {

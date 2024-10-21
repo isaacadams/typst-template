@@ -23,12 +23,7 @@
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
-      "extensions": [
-        "tomoki1207.pdf",
-        "nvarner.typst-lsp",
-        "rust-lang.rust-analyzer",
-        "myriad-dreamin.tinymist"
-      ]
+      "extensions": ["myriad-dreamin.tinymist"]
     }
   },
   "mounts": [
